@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "airplaneSeats", "airplaneSeats\airplaneSeats.csproj", "{48492D96-E1C4-4B9D-9B19-A904E5A06067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "airplaneSeat.Specs", "airplaneSeat.Specs\airplaneSeat.Specs.csproj", "{9DEB3777-5C88-4EA2-9891-229CB5719759}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48492D96-E1C4-4B9D-9B19-A904E5A06067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48492D96-E1C4-4B9D-9B19-A904E5A06067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48492D96-E1C4-4B9D-9B19-A904E5A06067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48492D96-E1C4-4B9D-9B19-A904E5A06067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DEB3777-5C88-4EA2-9891-229CB5719759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DEB3777-5C88-4EA2-9891-229CB5719759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DEB3777-5C88-4EA2-9891-229CB5719759}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DEB3777-5C88-4EA2-9891-229CB5719759}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

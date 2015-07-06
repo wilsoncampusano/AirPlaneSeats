@@ -1,0 +1,9 @@
+airplaneSeat.Specs/bin/*
+airplaneSeat.Specs/Properties/*
+airplaneSeat.Specs/obj/*
+airplaneSeats/bin/*
+airplaneSeats/obj/*
+airplaneSeats/Properties/*
+Properties/*
+packages/*
+*.suo
