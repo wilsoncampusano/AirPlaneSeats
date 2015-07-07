@@ -47,6 +47,12 @@
   <ItemGroup>
     <Compile Include="Environment.cs" />
     <Compile Include="OrderingAnswersSteps.cs" />
+    <Compile Include="PresentAllListingSeats.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PresentAllListingSeats.feature</DependentUpon>
+    </Compile>
+    <Compile Include="PresentAllListingSeatsSteps.cs" />
     <Compile Include="PresentSeatsToUser.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -55,8 +61,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
+    <None Include="PresentAllListingSeats.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PresentAllListingSeats.feature.cs</LastGenOutput>
+    </None>
     <None Include="PresentSeatsToUser.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PresentSeatsToUser.feature.cs</LastGenOutput>
