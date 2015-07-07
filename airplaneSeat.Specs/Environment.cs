@@ -14,7 +14,7 @@ namespace airplaneSeat.Specs
         [Test]
         public void Fails()
         {
-            Assert.Fail("");
+          
         }
     }
 }
