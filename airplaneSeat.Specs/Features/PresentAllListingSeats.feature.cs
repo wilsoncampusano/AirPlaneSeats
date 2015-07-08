@@ -65,12 +65,16 @@ namespace airplaneSeat.Specs.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("a list with reserved seats")]
-        public virtual void AListWithReservedSeats()
+        [NUnit.Framework.DescriptionAttribute("user want to see a list with reserved seats")]
+        public virtual void UserWantToSeeAListWithReservedSeats()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("a list with reserved seats", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("user want to see a list with reserved seats", ((string[])(null)));
 #line 3
 this.ScenarioSetup(scenarioInfo);
+#line 4
+ testRunner.Given("There are some reservations", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 5
+ testRunner.When("I search for a list of all reservations", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "Seat Number",
@@ -111,52 +115,8 @@ this.ScenarioSetup(scenarioInfo);
             table1.AddRow(new string[] {
                         "12",
                         "Johnson"});
-#line 4
- testRunner.Given("the following listing of seats in db", ((string)(null)), table1, "Given ");
-#line 18
- testRunner.When("I search for a list of all passanger", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Seat Number",
-                        "Passanger"});
-            table2.AddRow(new string[] {
-                        "1",
-                        "Ross"});
-            table2.AddRow(new string[] {
-                        "2",
-                        "N/O"});
-            table2.AddRow(new string[] {
-                        "3",
-                        "Belisle"});
-            table2.AddRow(new string[] {
-                        "4",
-                        "Krakov"});
-            table2.AddRow(new string[] {
-                        "5",
-                        "N/O"});
-            table2.AddRow(new string[] {
-                        "6",
-                        "N/O"});
-            table2.AddRow(new string[] {
-                        "7",
-                        "Soo"});
-            table2.AddRow(new string[] {
-                        "8",
-                        "Green"});
-            table2.AddRow(new string[] {
-                        "9",
-                        "Garcia"});
-            table2.AddRow(new string[] {
-                        "10",
-                        "Levin"});
-            table2.AddRow(new string[] {
-                        "11",
-                        "N/O"});
-            table2.AddRow(new string[] {
-                        "12",
-                        "Johnson"});
-#line 19
- testRunner.Then("the result shoulb be", ((string)(null)), table2, "Then ");
+#line 6
+ testRunner.Then("The user can see the following list", ((string)(null)), table1, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
