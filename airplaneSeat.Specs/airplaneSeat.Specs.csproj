@@ -46,18 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Environment.cs" />
-    <Compile Include="OrderingAnswersSteps.cs" />
-    <Compile Include="PresentAllListingSeats.feature.cs">
+    <Compile Include="Features\PresentAllListingSeats.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PresentAllListingSeats.feature</DependentUpon>
     </Compile>
-    <Compile Include="PresentAllListingSeatsSteps.cs" />
-    <Compile Include="PresentSeatsToUser.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PresentSeatsToUser.feature</DependentUpon>
-    </Compile>
+    <Compile Include="Steps_Definitions\PresentAllListingSeatsSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,14 +59,17 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
-    <None Include="PresentAllListingSeats.feature">
+    <None Include="Features\PresentAllListingSeats.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PresentAllListingSeats.feature.cs</LastGenOutput>
     </None>
-    <None Include="PresentSeatsToUser.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>PresentSeatsToUser.feature.cs</LastGenOutput>
-    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\airplaneSeats\airplaneSeats.csproj">
+      <Project>{48492D96-E1C4-4B9D-9B19-A904E5A06067}</Project>
+      <Name>airplaneSeats</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

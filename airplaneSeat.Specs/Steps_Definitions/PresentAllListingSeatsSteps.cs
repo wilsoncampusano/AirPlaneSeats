@@ -1,5 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
+using TechTalk.SpecFlow.Assist;
+using airplaneSeats;
 
 namespace airplaneSeat.Specs
 {
@@ -9,7 +13,10 @@ namespace airplaneSeat.Specs
         [Given(@"the following listing of seats in db")]
         public void GivenTheFollowingListingOfSeatsInDb(Table table)
         {
-            ScenarioContext.Current.Pending();
+            var presentableSeats = table.CreateSet<PresentableSeat>();
+            
+            Assert.That(presentableSeats, Is.Not.Null);
+            
         }
         
         [When(@"I search for all seats")]

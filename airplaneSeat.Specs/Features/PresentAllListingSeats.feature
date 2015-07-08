@@ -2,7 +2,7 @@
 
 Scenario: a list with reserved seats
 	Given the following listing of seats in db
-		| Seat number | Passanger |
+		| Seat Number | Passanger |
 		| 1           | Ross      |
 		| 2           | N/O       |
 		| 3           | Belisle   |
@@ -17,7 +17,7 @@ Scenario: a list with reserved seats
 		| 12          | Johnson   |
 	When I search for a list of all passanger
 	Then the result shoulb be
-		| Seat number | Passanger |
+		| Seat Number | Passanger |
 		| 1           | Ross      |
 		| 2           | N/O       |
 		| 3           | Belisle   |
@@ -30,4 +30,3 @@ Scenario: a list with reserved seats
 		| 10          | Levin     |
 		| 11          | N/O       |
 		| 12          | Johnson   |
-		

@@ -11,7 +11,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace airplaneSeat.Specs
+namespace airplaneSeat.Specs.Features
 {
     using TechTalk.SpecFlow;
     
@@ -73,7 +73,7 @@ namespace airplaneSeat.Specs
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Seat number",
+                        "Seat Number",
                         "Passanger"});
             table1.AddRow(new string[] {
                         "1",
@@ -117,7 +117,7 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.When("I search for a list of all passanger", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Seat number",
+                        "Seat Number",
                         "Passanger"});
             table2.AddRow(new string[] {
                         "1",
